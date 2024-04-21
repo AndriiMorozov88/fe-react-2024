@@ -1,4 +1,8 @@
-@media (max-width: 391px) {
+.about__link {
+  color: #111;
+}
+
+@media (max-width: 390px) {
 
   .about {
     max-width: 350px;
@@ -7,6 +11,7 @@
     display: flex;
     flex-direction: column;
     font-family: "Montserrat", sans-serif;
+    color: #111;
   }
 
   .about__heading {
@@ -34,11 +39,13 @@
     display: flex;
     flex-direction: column;
     font-family: "Montserrat", sans-serif;
+    color: #111;
   }
 
   .about__heading {
     font-size: 40px;
     margin-top: 20px;
+    font-weight: 700;
   }
 
   .about__text {
@@ -55,6 +62,19 @@
   }
 }
 
+@media (min-width: 800px) {
+
+  .about__imageContainer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .about__image {
+    width: 450px;
+    height: 450px;
+  }
+}
+
 @media (min-width: 1280px) {
 
   .about {
@@ -64,6 +84,7 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;
+    color: #111;
   }
 
   .about__description {
@@ -72,7 +93,8 @@
   }
 
   .about__imageContainer {
-    width: 40%;
+    display: flex;
+    justify-content: flex-end;
   }
 
   .about__heading {

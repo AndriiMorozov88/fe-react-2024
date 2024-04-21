@@ -1,4 +1,4 @@
-import mainImage from '@/assets/image.jpg';
+import mainImage from '@/assets/orange_staircase.jpg';
 
 import styles from './about.module.css';
 
@@ -7,7 +7,7 @@ export function AboutComponent() {
         <>
             <main className={styles.about}>
                 <section className={styles.about__imageContainer}>
-                    <img className={styles.about__image} src={mainImage} alt="aboutMe" />
+                    <img className={styles.about__image} src={mainImage} alt="Orange Staircase" />
                 </section>
                 <section className={styles.about__description}>
                     <h1 className={styles.about__heading}>About Me</h1>
@@ -17,7 +17,11 @@ export function AboutComponent() {
                     </p>
                     <p className={styles.about__text}>
                         This page was developed during the course &apos;
-                        <a target="blank" href="https://www.mastersacademy.education/frontend-for-beginners-it">
+                        <a
+                            className={styles.about__link}
+                            target="blank"
+                            href="https://www.mastersacademy.education/frontend-for-beginners-it"
+                        >
                             Intro to React
                         </a>
                         &apos; from Masters Academy in 2024.
@@ -27,12 +31,12 @@ export function AboutComponent() {
                         own small project for the portfolio.
                     </p>
                     <p className={styles.about__text}>
-                        You can contact me via
-                        <a target="blanc" href="https://t.me/slonyara8888">
+                        You can contact me via&nbsp;
+                        <a className={styles.about__link} target="blanc" href="https://t.me/slonyara8888">
                             telegram
                         </a>
-                        and check out my
-                        <a target="blanc" href="https://github.com/">
+                        &nbsp;and check out my&nbsp;
+                        <a className={styles.about__link} target="blanc" href="https://github.com/">
                             GitHub
                         </a>
                         .
