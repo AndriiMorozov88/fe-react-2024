@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <symbol id="logo" viewBox="0 0 46 46">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M44.5 23c0 11.874-9.626 21.5-21.5 21.5S1.5 34.874 1.5 23 11.126 1.5 23 1.5 44.5 11.126 44.5 23zm1.5 0c0 12.703-10.297 23-23 23S0 35.703 0 23 10.297 0 23 0s23 10.297 23 23zM23 10l5.224 10.105L34 15.418V32H12V15.418l5.776 4.687L23 10zm9.644 18.632V18.197l-3.817 3.086 3.817 7.349zm-5.475-7.68L23 12.898l-4.169 8.056L23 24.345l4.169-3.392zm-13.838 7.68 3.817-7.35-3.817-3.085v10.435zm4.872-6.478-4.47 8.598h18.534l-4.47-8.598L23 26.041l-4.797-3.887z" fill="#fff"/>
+        </symbol>
+        <symbol id="sun" viewBox="0 0 30 34">
+            <g clip-path="url(#a)"><path d="M15 10.333V8.667m0 15v1.666m-4.655-12.988-1.178-1.178m10.606 10.606 1.179 1.179M8.333 17H6.667m15 0h1.666m-3.56-4.655 1.18-1.178M10.345 21.773l-1.179 1.179M15 21.167a4.167 4.167 0 1 1 0-8.334 4.167 4.167 0 0 1 0 8.334z" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></g><defs><clipPath id="a"><path fill="#fff" transform="translate(5 7)" d="M0 0h20v20H0z"/></clipPath>
+        </symbol>
+        <symbol id="moon" viewBox="0 0 30 34">
+            <path d="M12.5 12a7.5 7.5 0 0 0 9.679 7.179 7.5 7.5 0 1 1-9.357-9.357A7.502 7.502 0 0 0 12.5 12z" stroke="#656565" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </symbol>
+    </defs>
+</svg>
