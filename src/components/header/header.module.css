@@ -10,3 +10,31 @@
   width: 46px;
   height: 46px;
 }
+
+.header__switcherContainer {
+  display: flex;
+  width: 80px;
+  height: 34px;
+}
+
+.switcherContainer__button {
+  border: none;
+  background: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.switcherContainer__logo {
+  width: 34px;
+  height: 34px;
+}
+
+.switcherContainer__logoActive {
+  stroke: #FFF;
+}
+
+.switcherContainer__logoDisabled {
+  stroke: #656565;
+}
