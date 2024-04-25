@@ -4,6 +4,7 @@ import mocLogo from '@/assets/icons/logo.svg';
 import moonLogo from '@/assets/icons/moon.svg';
 import sunLogo from '@/assets/icons/sun.svg';
 
+import { ButtonComponent } from '../button/Button.component.tsx';
 import { LineComponent } from '../line/Line.component.tsx';
 
 import { liNames } from './header_data.js';
@@ -29,6 +30,11 @@ export function HeaderComponent() {
                     <LineComponent line={liNames[1]} />
                 </ul>
                 <img src={cartLogo} alt="cartLogo" />
+                <ButtonComponent>
+                    <div className={styles.red}></div>
+                </ButtonComponent>
+                <ButtonComponent>122</ButtonComponent>
+                <ButtonComponent>1121</ButtonComponent>
             </header>
         </>
     );
