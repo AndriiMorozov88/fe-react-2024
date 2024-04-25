@@ -31,10 +31,6 @@
   height: 34px;
 }
 
-.switcherContainer__logoActive {
-  stroke: #FFF;
-}
-
-.switcherContainer__logoDisabled {
-  stroke: #656565;
+.header__menu {
+  display: flex;
 }

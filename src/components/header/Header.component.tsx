@@ -1,4 +1,12 @@
-import sprite from '@/assets/sprite.svg';
+import cartLogo from '@/assets/icons/cart.svg';
+import dividerLogo from '@/assets/icons/divider.svg';
+import mocLogo from '@/assets/icons/logo.svg';
+import moonLogo from '@/assets/icons/moon.svg';
+import sunLogo from '@/assets/icons/sun.svg';
+
+import { LineComponent } from '../line/Line.component.tsx';
+
+import { liNames } from './header_data.js';
 
 import styles from './header.module.css';
 
@@ -6,24 +14,21 @@ export function HeaderComponent() {
     return (
         <>
             <header className={styles.header}>
-                <svg className={styles.header__logo}>
-                    <use xlinkHref={`${sprite}#logo`}></use>
-                </svg>
+                <img src={mocLogo} alt="mocLogo" />
                 <div className={styles.header__switcherContainer}>
                     <button className={styles.switcherContainer__button}>
-                        <svg className={`${styles.switcherContainer__logo} ${styles.switcherContainer__logoActive}`}>
-                            <use xlinkHref={`${sprite}#sun`}></use>
-                        </svg>
+                        <img src={sunLogo} alt="sunLogo" />
                     </button>
-                    <svg>
-                        <use xlinkHref={`${sprite}#divider`}></use>
-                    </svg>
+                    <img src={dividerLogo} alt="dividerLogo" />
                     <button className={styles.switcherContainer__button}>
-                        <svg className={`${styles.switcherContainer__logo} ${styles.switcherContainer__logoDisabled}`}>
-                            <use xlinkHref={`${sprite}#moon`}></use>
-                        </svg>
+                        <img className={styles.switcherContainer__logoDisabled} src={moonLogo} alt="moonLogo" />
                     </button>
                 </div>
+                <ul className={styles.header__menu}>
+                    <LineComponent line={liNames[0]} />
+                    <LineComponent line={liNames[1]} />
+                </ul>
+                <img src={cartLogo} alt="cartLogo" />
             </header>
         </>
     );
