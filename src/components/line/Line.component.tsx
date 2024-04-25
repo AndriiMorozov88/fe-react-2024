@@ -1,5 +1,11 @@
+import type { ReactNode } from 'react';
+
 import styles from './line.module.css';
 
-export function LineComponent({ line }) {
+interface Props {
+    line: ReactNode;
+}
+
+export function LineComponent({ line }: Props) {
     return <li className={styles.li}>{line}</li>;
 }

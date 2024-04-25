@@ -1,5 +1,12 @@
 .li {
   color: #FFF;
   list-style: none;
-  margin-left: 10px;
+  font-weight: 500;
+  margin: 0 30px;
+  width: 50px;
+
+  &:hover {
+    cursor: pointer;
+    font-weight: 700;
+  }
 }
