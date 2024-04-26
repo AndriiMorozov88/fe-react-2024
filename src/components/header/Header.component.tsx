@@ -1,3 +1,4 @@
+import burgerLogo from '@/assets/icons/burger.svg';
 import cartLogo from '@/assets/icons/cart.svg';
 import dividerLogo from '@/assets/icons/divider.svg';
 import logInLogo from '@/assets/icons/log_in.svg';
@@ -39,6 +40,7 @@ export function HeaderComponent() {
                 </section>
                 <section className={styles.headerSection}>
                     <img src={cartLogo} alt="cartLogo" />
+                    <img className={styles.sectionBurger} src={burgerLogo} alt="burgerLogo" />
                 </section>
                 <section className={`${styles.headerSection} + ${styles.sectionButtons}`}>
                     <ButtonComponent className={styles.logInButton}>
@@ -50,6 +52,9 @@ export function HeaderComponent() {
                         <p>Sign Up</p>
                     </ButtonComponent>
                 </section>
+                {/* <section className={`${styles.headerSection} + ${styles.sectionBurger}`}>
+                    <img src={burgerLogo} alt="burgerLogo" />
+                </section> */}
             </header>
         </>
     );
