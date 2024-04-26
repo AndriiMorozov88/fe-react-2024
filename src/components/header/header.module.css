@@ -88,8 +88,8 @@
 @media (max-width: 760px) {
 
   .header {
-    display: grid;
-    grid-template-columns: 20fr 2fr;
+    display: flex;
+    justify-content: space-between;
   }
 
   .header__switcherContainer {
@@ -100,15 +100,12 @@
     display: none;
   }
 
-  .logInButton {
-    display: none;
-  }
-
-  .signUpButton {
+  .sectionButtons {
     display: none;
   }
 
   .sectionBurger {
-    display: block;
+    display: flex;
+    margin-left: 20px;
   }
 }

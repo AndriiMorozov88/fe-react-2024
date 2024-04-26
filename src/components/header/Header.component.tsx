@@ -42,6 +42,9 @@ export function HeaderComponent() {
                     <img src={cartLogo} alt="cartLogo" />
                     <img className={styles.sectionBurger} src={burgerLogo} alt="burgerLogo" />
                 </section>
+                {/* <section className={`${styles.headerSection} + ${styles.sectionBurger}`}>
+                    <img src={burgerLogo} alt="burgerLogo" />
+                </section> */}
                 <section className={`${styles.headerSection} + ${styles.sectionButtons}`}>
                     <ButtonComponent className={styles.logInButton}>
                         <img src={logInLogo} alt="logInLogo" />
@@ -52,9 +55,6 @@ export function HeaderComponent() {
                         <p>Sign Up</p>
                     </ButtonComponent>
                 </section>
-                {/* <section className={`${styles.headerSection} + ${styles.sectionBurger}`}>
-                    <img src={burgerLogo} alt="burgerLogo" />
-                </section> */}
             </header>
         </>
     );
