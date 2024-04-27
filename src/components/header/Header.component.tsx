@@ -32,20 +32,18 @@ export function HeaderComponent() {
                         </button>
                     </div>
                 </section>
-                <section className={`${styles.headerSection} + ${styles.headerSectionMenu}`}>
-                    <ul className={styles.header__menu}>
-                        <LineComponent line={liNames[0]} />
-                        <LineComponent line={liNames[1]} />
+                <section className={`${styles.headerSection} ${styles.headerSectionMenu}`}>
+                    <ul className={styles.headerMenu}>
+                        {liNames.map((element, index) => (
+                            <LineComponent key={index} line={element} />
+                        ))}
                     </ul>
                 </section>
                 <section className={styles.headerSection}>
                     <img src={cartLogo} alt="cartLogo" />
                     <img className={styles.sectionBurger} src={burgerLogo} alt="burgerLogo" />
                 </section>
-                {/* <section className={`${styles.headerSection} + ${styles.sectionBurger}`}>
-                    <img src={burgerLogo} alt="burgerLogo" />
-                </section> */}
-                <section className={`${styles.headerSection} + ${styles.sectionButtons}`}>
+                <section className={`${styles.headerSection} ${styles.sectionButtons}`}>
                     <ButtonComponent className={styles.logInButton}>
                         <img src={logInLogo} alt="logInLogo" />
                         <p>Login</p>

@@ -3,7 +3,7 @@
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
-  border-top: 1px #CCC solid;
+  border-top: 1px var(--footer-border-color) solid;
   height: 160px;
   min-height: 160px;
   margin-top: 50px;
@@ -24,5 +24,5 @@
 }
 
 .footer__link {
-  color: #EF4934;
+  color: var(--footer-link-color);
 }

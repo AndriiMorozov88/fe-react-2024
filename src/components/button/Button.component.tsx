@@ -8,5 +8,5 @@ interface Props {
 }
 
 export function ButtonComponent({ children, className }: Props) {
-    return <button className={`${styles.button} + ${className}`}>{children}</button>;
+    return <button className={`${styles.button} ${className}`}>{children}</button>;
 }

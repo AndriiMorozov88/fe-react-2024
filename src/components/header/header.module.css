@@ -2,9 +2,9 @@
   width: 100%;
   height: 80px;
   min-height: 80px;
-  background-color: #111;
+  background-color: var(--header-bg-color);
   display: grid;
-  grid-template-columns: 2fr 4fr 15fr 1fr 5fr;
+  grid-template-columns: 8fr 43fr 25fr 4fr 18fr;
   font-family: "Montserrat", sans-serif;
   padding: 0 53px;
 }
@@ -14,12 +14,14 @@
   align-items: center;
 }
 
-.headerSectionMenu {
-  justify-content: center;
+.headerMenu {
+  display: flex;
+  width: 175px;
+  justify-content: space-between;
 }
 
 .sectionButtons {
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 .header__logo {
@@ -46,31 +48,31 @@
   height: 34px;
 }
 
-.header__menu {
+.headerMenu {
   display: flex;
 }
 
 .logInButton {
-  background-color: #333;
+  background-color: var(--logIn-button-color);
   width: 96px;
   height: 34px;
-  color: #FFF;
+  color: var(--header-text-color);
 
   &:hover {
     cursor: pointer;
-    background-color: #585858;
+    background-color: var(--logIn-button-color-hover);
   }
 }
 
 .signUpButton {
-  background-color: #EF4934;
+  background-color: var(--signUp-button-color);
   width: 113px;
   height: 34px;
-  color: #FFF;
+  color: var(--header-text-color);
 
   &:hover {
     cursor: pointer;
-    background-color: #D43824;
+    background-color: var(--signUp-button-color-hover);
   }
 }
 
@@ -78,14 +80,14 @@
   display: none;
 }
 
-@media (max-width: 950px) {
+@media (max-width: 1150px) {
 
   .header {
-    grid-template-columns: 2fr 4fr 10fr 1fr 5fr;
+    grid-template-columns: 8fr 30fr 35fr 4fr 18fr;
   }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 900px) {
 
   .header {
     display: flex;
@@ -96,7 +98,7 @@
     display: none;
   }
 
-  .header__menu {
+  .headerMenu {
     display: none;
   }
 
