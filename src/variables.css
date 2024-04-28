@@ -1,0 +1,11 @@
+:root {
+  --header-bg-color: #111;
+  --header-text-color: #FFF;
+  --logIn-button-color: #333;
+  --logIn-button-color-hover: #585858;
+  --signUp-button-color: #EF4934;
+  --signUp-button-color-hover: #D43824;
+  --main-text-color: #111;
+  --footer-link-color: #EF4934;
+  --footer-border-color: #CCC;
+}
