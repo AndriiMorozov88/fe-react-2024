@@ -18,40 +18,42 @@ export function HeaderComponent() {
     return (
         <>
             <header className={styles.header}>
-                <section className={styles.headerSection}>
-                    <img src={mocLogo} alt="mocLogo" />
-                </section>
-                <section className={styles.headerSection}>
-                    <div className={styles.header__switcherContainer}>
-                        <button className={styles.switcherContainer__button}>
-                            <img src={sunLogo} alt="sunLogo" />
-                        </button>
-                        <img src={dividerLogo} alt="dividerLogo" />
-                        <button className={styles.switcherContainer__button}>
-                            <img className={styles.switcherContainer__logoDisabled} src={moonLogo} alt="moonLogo" />
-                        </button>
-                    </div>
-                </section>
-                <section className={`${styles.headerSection} ${styles.headerSectionMenu}`}>
-                    <ul className={styles.headerMenu}>
-                        {liNames.map((element, index) => (
-                            <LineComponent key={index} line={element} />
-                        ))}
-                    </ul>
-                </section>
-                <section className={styles.headerSection}>
-                    <img src={cartLogo} alt="cartLogo" />
-                    <img className={styles.sectionBurger} src={burgerLogo} alt="burgerLogo" />
-                </section>
-                <section className={`${styles.headerSection} ${styles.sectionButtons}`}>
-                    <ButtonComponent className={styles.logInButton}>
-                        <img src={logInLogo} alt="logInLogo" />
-                        <p>Login</p>
-                    </ButtonComponent>
-                    <ButtonComponent className={styles.signUpButton}>
-                        <img src={signUpLogo} alt="signUpLogo" />
-                        <p>Sign Up</p>
-                    </ButtonComponent>
+                <section className={styles.headerContainer}>
+                    <section className={styles.headerSection}>
+                        <img src={mocLogo} alt="mocLogo" />
+                    </section>
+                    <section className={styles.headerSection}>
+                        <div className={styles.header__switcherContainer}>
+                            <button className={styles.switcherContainer__button}>
+                                <img src={sunLogo} alt="sunLogo" />
+                            </button>
+                            <img src={dividerLogo} alt="dividerLogo" />
+                            <button className={styles.switcherContainer__button}>
+                                <img className={styles.switcherContainer__logoDisabled} src={moonLogo} alt="moonLogo" />
+                            </button>
+                        </div>
+                    </section>
+                    <section className={`${styles.headerSection} ${styles.headerSectionMenu}`}>
+                        <ul className={styles.headerMenu}>
+                            {liNames.map((element, index) => (
+                                <LineComponent key={index} line={element} />
+                            ))}
+                        </ul>
+                    </section>
+                    <section className={styles.headerSection}>
+                        <img src={cartLogo} alt="cartLogo" />
+                        <img className={styles.sectionBurger} src={burgerLogo} alt="burgerLogo" />
+                    </section>
+                    <section className={`${styles.headerSection} ${styles.sectionButtons}`}>
+                        <ButtonComponent className={styles.logInButton}>
+                            <img src={logInLogo} alt="logInLogo" />
+                            <p>Login</p>
+                        </ButtonComponent>
+                        <ButtonComponent className={styles.signUpButton}>
+                            <img src={signUpLogo} alt="signUpLogo" />
+                            <p>Sign Up</p>
+                        </ButtonComponent>
+                    </section>
                 </section>
             </header>
         </>

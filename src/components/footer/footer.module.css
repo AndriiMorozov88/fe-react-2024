@@ -3,12 +3,11 @@
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
-  border-top: 1px var(--footer-border-color) solid;
   height: 160px;
   min-height: 160px;
   margin-top: 50px;
   flex-wrap: wrap;
-  padding: 0 30px;
+  border-top: 1px var(--footer-border-color) solid;
 }
 
 .footer__logoContainer {

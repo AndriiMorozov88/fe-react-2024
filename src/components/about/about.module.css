@@ -83,13 +83,16 @@
 
 @media (min-width: 1280px) {
 
+  .main {
+    display: flex;
+    justify-content: center;
+  }
+
   .about {
-    width: 100%;
-    padding: 0 10px;
-    margin-top: 20px;
+    max-width: 1175px;
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-around;
+    justify-content: space-between;
     color: var(--main-text-color);
   }
 
