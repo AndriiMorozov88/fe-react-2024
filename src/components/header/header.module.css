@@ -95,7 +95,8 @@
 
 @media (max-width: 900px) {
 
-  .header {
+  .headerContainer {
+    width: 100%;
     display: flex;
     justify-content: space-between;
   }
